@@ -1,0 +1,14 @@
+cachetools==4.2.4
+certifi==2021.10.8
+charset-normalizer==2.0.9
+cssselect==1.1.0
+cssutils==2.3.0
+idna==3.3
+importlib-metadata==4.10.0
+keyring==23.4.0
+lxml==4.7.1
+premailer==3.10.0
+requests==2.26.0
+urllib3==1.26.7
+yagmail==0.14.260
+zipp==3.6.0
