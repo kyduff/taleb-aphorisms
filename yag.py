@@ -4,7 +4,10 @@ import yagmail
 
 from datetime import datetime
 
-yag = yagmail.SMTP(os.environ['NOTIFY_GMAIL_UNAME'])
+yag = yagmail.SMTP(
+    os.environ['NOTIFY_GMAIL_UNAME'],
+    os.environ['NOTIFY_GMAIL_PASS']
+)
 
 path = os.path.dirname(__file__)
 
@@ -30,5 +33,4 @@ subject = f'Aphorisms. {date}'
 with open(os.path.join(path, 'emails.txt'), 'r') as adrs:
     emails = [line.strip() for line in adrs.readlines()]
 
-for email in emails:
-    yag.send(email, subject, contents)
+yag.send(emails, subject, contents)
