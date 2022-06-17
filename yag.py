@@ -6,7 +6,7 @@ from datetime import datetime
 
 yag = yagmail.SMTP(
     os.environ['NOTIFY_GMAIL_UNAME'],
-    os.environ['NOTIFY_GMAIL_PASS']
+    os.environ['NOTIFY_GMAIL_APP_PASS']
 )
 
 path = os.path.dirname(__file__)
