@@ -30,7 +30,7 @@ contents = [
     f'3. {aphorisms[2]}',
     f'4. {aphorisms[3]}',
     '\n',
-    'And another three, courtesy of Leonardo Da Vinci:',
+    'And another three, courtesy of Leonardo da Vinci:',
     f'1. {leonardos[0]}',
     f'2. {leonardos[1]}',
     f'3. {leonardos[2]}',
